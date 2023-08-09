@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"> 
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <input type="text" placeholder="type text" class="mytext">
     
+        <button id="box">Search</button>
+        <div id="search"></div>
+
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script>
+
+        function search(){
+            var state=document.getElementsByClassName("mytext")[0].value
+            console.log(state)
+            switch(state){
+            case "Abia":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is umuahia"
+                break;
+            case "Adamawa":
+                document.getElementsById('search').innerHTML=" the capital of "+state+" is Yola"
+                break;
+            case "Akwa Ibom":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Uyo"
+                break;
+            case "Anambra":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Akwa"
+                break;
+            case "Bauchi":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Bauchi"
+                break;
+            case "Bayelsa":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Yenagoa"
+                 break;
+            case "Benue":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Makurdi"
+                 break;
+            case "Borno":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Maidugiri"
+                 break;
+            case "Cross River":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is calabar"
+                 break;
+            case "delta":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Asaba"
+                 break;
+            case "Ebonyi":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Abakilikia"
+                 break;
+            case "Edo":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Benin city"
+                 break;
+            case "Ekiti":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Ado Ekiti"
+                 break;
+            case "Enugu":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Enugu"
+                 break;
+            case "Gombe":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Gombe"
+                 break;
+            case "Imo":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is owerri"
+                 break;
+            case "Jigawa":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Dutse"
+                 break;
+            case "Kaduna":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is kaduna"
+                 break;
+            case "Kano":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is kano"
+                 break;
+            case "kastina":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is kastina"
+                 break;
+            case "kebbi":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Birnin kebbi"
+                 break;
+            case "kogi":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is lokoja"
+                 break;
+            case "kwara":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is ilorin"
+                 break;
+            case "lagos":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is ikeja"
+                 break;
+            case "Nasarawa":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Lafia"
+                 break;
+            case "Niger":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Minna"
+                 break;
+            case "ogun":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Abeokuta"
+                 break;
+            case "ondo":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Akure"
+                 break;
+            case "Osun":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is oshogbo"
+                 break;
+            case "oyo":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is ibadan"
+                 break;
+            case "plateau":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is jos"
+                 break;
+            case "Rivers":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is port Harcourt"
+                 break;
+            case "Sokoto":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is sokoto"
+                 break;
+            case "Taraba":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Jalingo"
+                 break;
+            case "Yobe":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Damturu"
+                 break;
+            case "Zamfara":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Gusau"
+                 break;
+            case "Federal Capital Territory":
+                document.getElementById('search').innerHTML=" the capital of "+state+" is Abuja"
+                 break;
+
+            default :
+                document.getElementById('search').innerHTML=" the capital of "+state+" doesn't exist"
+                 break;
+            }
+        }
+    var searchBox = document.getElementById("box")
+    searchBox.addEventListener('click', search)
+</script>
 </body>
 </html>
