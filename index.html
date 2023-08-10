@@ -12,15 +12,14 @@
     <p style="color: whitesmoke; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio laboriosam sint hic sed accusamus.</p>
 
     <div class="btn">
-        <input type="text" placeholder="type text " class="mytext" style ="border:2px solid whitesmoke; border-radius: 5px; margin: 100px 50px 50px 150px; height: 30px; width: 50%; font-size: 30px; font-style: italic; color: whitesmoke;" >
+        <input type="text" placeholder="type text " class="mytext" style ="border:2px solid whitesmoke; border-radius: 5px; margin: 100px 50px 50px 150px; height: 30px; width: 50%; font-size: 30px; font-style: italic;" >
     
-        <button id="box" style="color: grey; border: 2px solid whitesmoke; border-radius: 5px; height: 50px;font-size: large;width: 150px;">Search</button>
-        <div id="search" style="font-size: 50px; position: relative; padding: 50px; color: whitesmoke; "></div>
+        <button id="box" style="color: grey; border: 2px solid whitesmoke; border-radius: 5px; height: 40px;font-size: large;width: 150px;">Search</button>
+        <div id="search" style="font-size: 50px; position: relative; padding: 50px; "></div>
 
     </div>
     
     <div class="interval"></div>
-    <div id="Hour"></div>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
@@ -29,30 +28,21 @@
         setInterval(function(){
             document.getElementsByClassName("interval")[0].innerHTML= new Date().toLocaleTimeString()
         },1000)
-        document.getElementsById("Hour").innerHTML= new Date().getHours()
+        
+        let Hour = new Date().getHours()
 
-        if(Hour.getHours()<=12){
-        document.getElementById("Hour").innerHTML = "Good Morning" +new Date().getHours()
-    }else{
-        document.getElementById("Hour").innerHTML+=""
-    }
-    if(Hour.getHours()>=12){
-        document.getElementById("Hour").innerHTML = "Good Afternoon/Evening" +new Date().getHours()
-    }else{
-        document.getElementById("Hour").innerHTML+=""
-    }
-    // if(Hour.getHours()<=12){
-    //     document.getElementById("Hour").innerHTML = "Good Evening" +new Date().getHours()
-    // }else{
-    //     document.getElementById("Hour").innerHTML+=""
-    // }
+        if(Hour.getHours()< 11){
+            document.getElementById("Hour").innerHTML = alert(new Date().getHours())
+        }else if(our.getHours()> 11){
+            document.getElementById("Hour").innerHTML = alert(new Date().getHours())
+        }
+       
+        
     
-    
-    
-
         function search(){
             var state=document.getElementsByClassName("mytext")[0].value
             console.log(state)
+            
             switch(state){
             case "Abia":
                 document.getElementById('search').innerHTML=" the capital of "+state+" is umuahia"
@@ -172,9 +162,7 @@
             }
         }
 
-        if(date.getDate()==27){
-        document.getElementById("method").innerHTML+="Today's date is:"+date.getDate()+"<br>"
-    }
+        
     var searchBox = document.getElementById("box")
     searchBox.addEventListener('click', search)
 
