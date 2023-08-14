@@ -1,3 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1665435604098-07f3b461f0bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfE8zd0JjNTl6emY4fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    background-position: center;
+}
+    
+
+h1{
+    color: whitesmoke;
+    margin-top: 200px;
+    font-size: 30px;
+}
+.myText{
+    
+}
+
+
+
+
+
 .interval{
     position: absolute;
     top: 20px;
